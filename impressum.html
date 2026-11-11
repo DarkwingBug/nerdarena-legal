@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Nerd Arena</title>
+    <style>
+        :root {
+            --bg: #0D0221;
+            --surface: #150535;
+            --card: #2A1060;
+            --neon-pink: #FF2D95;
+            --electric-cyan: #00F0FF;
+            --synth-purple: #7B61FF;
+            --text-primary: #E0D0FF;
+            --text-secondary: #8B6FCF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .glow-line {
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-pink), var(--synth-purple), var(--electric-cyan));
+            box-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--synth-purple);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 16px 64px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--neon-pink), var(--synth-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+
+        .logo .sub {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        h2 {
+            color: var(--electric-cyan);
+            font-size: 1.15rem;
+            margin: 32px 0 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p, address {
+            font-style: normal;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--neon-pink);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 8px var(--neon-pink);
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(123, 97, 255, 0.2);
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(123, 97, 255, 0.15);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--synth-purple);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-line"></div>
+    <div class="container">
+        <div class="logo">
+            <h1>NERD ARENA</h1>
+            <div class="sub">Impressum</div>
+        </div>
+
+        <div class="card">
+            <h2>Angaben gemäß § 5 DDG</h2>
+            <address>
+                Rudolf Podlich<br>
+                Fliederweg 3<br>
+                31683 Obernkirchen<br>
+                Deutschland
+            </address>
+        </div>
+
+        <div class="card">
+            <h2>Kontakt</h2>
+            <p>E-Mail: darkwingbug@proton.me</p>
+        </div>
+
+        <div class="card">
+            <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+            <address>
+                Rudolf Podlich<br>
+                Fliederweg 3<br>
+                31683 Obernkirchen
+            </address>
+        </div>
+
+        <div class="card">
+            <h2>EU-Streitschlichtung</h2>
+            <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>
+            </p>
+            <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+
+        <div class="card">
+            <h2>Haftung für Inhalte</h2>
+            <p>
+                Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+                Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht unter der Pflicht, übermittelte oder gespeicherte fremde
+                Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            </p>
+            <p>
+                Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
+                Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+                Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Haftung für Links</h2>
+            <p>
+                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+                diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                oder Betreiber der Seiten verantwortlich.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Nerd Arena</p>
+            <a href="datenschutz.html" class="back-link">Datenschutzerklärung →</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – Nerd Arena</title>
+    <style>
+        :root {
+            --bg: #0D0221;
+            --surface: #150535;
+            --card: #2A1060;
+            --neon-pink: #FF2D95;
+            --electric-cyan: #00F0FF;
+            --synth-purple: #7B61FF;
+            --text-primary: #E0D0FF;
+            --text-secondary: #8B6FCF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .glow-line {
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-pink), var(--synth-purple), var(--electric-cyan));
+            box-shadow: 0 0 15px var(--neon-pink), 0 0 30px var(--synth-purple);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 16px 64px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--neon-pink), var(--synth-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+
+        .logo .sub {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        h2 {
+            color: var(--electric-cyan);
+            font-size: 1.15rem;
+            margin: 32px 0 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            color: var(--synth-purple);
+            font-size: 1rem;
+            margin: 20px 0 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin: 8px 0 16px 20px;
+            color: var(--text-primary);
+        }
+
+        li { margin-bottom: 6px; }
+
+        a {
+            color: var(--neon-pink);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 8px var(--neon-pink);
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(123, 97, 255, 0.2);
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 24px;
+        }
+
+        .highlight {
+            color: var(--electric-cyan);
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(123, 97, 255, 0.15);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--synth-purple);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-line"></div>
+    <div class="container">
+        <div class="logo">
+            <h1>NERD ARENA</h1>
+            <div class="sub">Datenschutzerklärung</div>
+        </div>
+
+        <div class="card">
+            <h2>1. Verantwortlicher</h2>
+            <p>
+                Verantwortlich für die Datenverarbeitung in der App „Nerd Arena" ist:
+            </p>
+            <p>
+                Rudolf Podlich<br>
+                Fliederweg 3<br>
+                31683 Obernkirchen<br>
+                E-Mail: darkwingbug@proton.me
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>2. Überblick der Datenverarbeitung</h2>
+            <p>
+                Nerd Arena ist ein Multiplayer-Quiz-Spiel. Wir verarbeiten so wenig personenbezogene Daten wie möglich.
+                Die App nutzt <span class="highlight">keine Werbung</span>, <span class="highlight">kein Tracking</span>
+                und <span class="highlight">keine Analyse-Tools</span> von Drittanbietern.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>3. Welche Daten werden verarbeitet?</h2>
+
+            <h3>a) Firebase Anonymous Authentication</h3>
+            <p>
+                Beim Start der App wird automatisch ein anonymes Benutzerkonto über Google Firebase Authentication erstellt.
+                Dabei wird eine zufällige <span class="highlight">User-ID (UID)</span> generiert. Es werden keine persönlichen Daten
+                wie Name, E-Mail oder Telefonnummer erhoben.
+            </p>
+            <p>Rechtsgrundlage: Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) – die anonyme Authentifizierung ist technisch notwendig, um Spielsitzungen zu verwalten.</p>
+
+            <h3>b) Spielername</h3>
+            <p>
+                Du wählst einen frei wählbaren <span class="highlight">Spielernamen</span> (3–16 Zeichen, alphanumerisch).
+                Dieser wird in der Datenbank gespeichert und ist für andere Spieler sichtbar. Du bist nicht verpflichtet,
+                deinen echten Namen zu verwenden.
+            </p>
+            <p>Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) – der Spielername ist notwendig für die Spielfunktion.</p>
+
+            <h3>c) Spielstände und Statistiken</h3>
+            <p>
+                Folgende spielbezogene Daten werden gespeichert:
+            </p>
+            <ul>
+                <li>Anzahl gespielter Spiele</li>
+                <li>Anzahl gewonnener Spiele</li>
+                <li>Gesammelte Nerd-Brillen (Spielwährung)</li>
+                <li>Letzter Aktivitäts-Zeitpunkt</li>
+            </ul>
+            <p>Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
+
+            <h3>d) Google Sign-In (optional)</h3>
+            <p>
+                Du kannst dein anonymes Konto optional mit einem <span class="highlight">Google-Konto verknüpfen</span>,
+                um deinen Spielstand geräteübergreifend zu sichern. Dabei erhalten wir von Google:
+            </p>
+            <ul>
+                <li>Deine Google-User-ID</li>
+                <li>Deinen Anzeigenamen</li>
+                <li>Deine E-Mail-Adresse</li>
+            </ul>
+            <p>
+                Diese Daten werden ausschließlich zur Kontoverknüpfung genutzt und nicht an Dritte weitergegeben.
+                Die Verknüpfung ist vollständig freiwillig.
+            </p>
+            <p>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+
+            <h3>e) Spielsitzungsdaten (Realtime Database)</h3>
+            <p>
+                Während einer aktiven Spielrunde werden temporäre Daten wie Spielzüge, Buzzer-Zeitpunkte und Antworten
+                in der Firebase Realtime Database gespeichert. Diese Daten werden nach Ende der Spielrunde nicht dauerhaft vorgehalten.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>4. Hosting und Datenverarbeitung</h2>
+            <p>
+                Die App nutzt <span class="highlight">Google Firebase</span> als Backend-Infrastruktur.
+                Die Datenverarbeitung erfolgt auf Servern in der <span class="highlight">Europäischen Union</span>
+                (Region: europe-west1 / eur3).
+            </p>
+            <p>
+                Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen:
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Datenschutz</a>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>5. Speicherdauer</h2>
+            <ul>
+                <li><strong>Anonyme Konten:</strong> Werden nach längerer Inaktivität automatisch gelöscht.</li>
+                <li><strong>Verknüpfte Konten:</strong> Werden gespeichert, bis du die Löschung beantragst.</li>
+                <li><strong>Spielsitzungsdaten:</strong> Werden nach Ende der Spielrunde zeitnah gelöscht.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>6. Deine Rechte (DSGVO)</h2>
+            <p>Du hast jederzeit folgende Rechte:</p>
+            <ul>
+                <li><strong>Auskunft</strong> (Art. 15 DSGVO) – Welche Daten über dich gespeichert sind</li>
+                <li><strong>Berichtigung</strong> (Art. 16 DSGVO) – Korrektur unrichtiger Daten</li>
+                <li><strong>Löschung</strong> (Art. 17 DSGVO) – Löschung deiner Daten</li>
+                <li><strong>Einschränkung</strong> (Art. 18 DSGVO) – Einschränkung der Verarbeitung</li>
+                <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO) – Daten in maschinenlesbarem Format</li>
+                <li><strong>Widerspruch</strong> (Art. 21 DSGVO) – Widerspruch gegen die Verarbeitung</li>
+                <li><strong>Widerruf</strong> – Eine erteilte Einwilligung (z.B. Google Sign-In) kannst du jederzeit widerrufen</li>
+            </ul>
+            <p>
+                Zur Ausübung deiner Rechte wende dich per E-Mail an: <a href="mailto:darkwingbug@proton.me">darkwingbug@proton.me</a>
+            </p>
+            <p>
+                Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>7. Kontodaten löschen</h2>
+            <p>
+                Du kannst dein Konto und alle damit verbundenen Daten jederzeit löschen:
+            </p>
+            <ul>
+                <li>In der App unter Einstellungen → Konto löschen</li>
+                <li>Oder per E-Mail an: <a href="mailto:darkwingbug@proton.me">darkwingbug@proton.me</a></li>
+            </ul>
+            <p>Bei Löschung werden dein Spielername, deine Statistiken und ggf. verknüpfte Google-Daten dauerhaft entfernt.</p>
+        </div>
+
+        <div class="card">
+            <h2>8. Änderungen</h2>
+            <p>
+                Diese Datenschutzerklärung kann gelegentlich aktualisiert werden. Die aktuelle Version ist jederzeit
+                unter dieser URL abrufbar.
+            </p>
+            <p>Stand: November 2026</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Nerd Arena</p>
+            <a href="impressum.html" class="back-link">← Impressum</a>
+        </div>
+    </div>
+</body>
+</html>
