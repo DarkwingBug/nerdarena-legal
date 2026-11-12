@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konto löschen – Nerd Arena</title>
+  <style>
+    :root {
+      --bg: #0D0221;
+      --surface: #150535;
+      --elevated: #2A1060;
+      --neon-pink: #FF2D95;
+      --electric-cyan: #00F0FF;
+      --synth-purple: #7B61FF;
+      --text-primary: #E0D0FF;
+      --text-secondary: #8B6FCF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 640px;
+      padding: 80px 24px 48px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--neon-pink), var(--synth-purple), var(--electric-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      color: var(--electric-cyan);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      margin-top: 32px;
+    }
+
+    p, li {
+      line-height: 1.7;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .email-box {
+      background: var(--surface);
+      border: 1px solid var(--elevated);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+      text-align: center;
+    }
+
+    .email-box a {
+      color: var(--neon-pink);
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .email-box a:hover {
+      color: var(--electric-cyan);
+    }
+
+    .info-box {
+      background: var(--surface);
+      border: 1px solid var(--elevated);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+
+    .info-box strong {
+      color: var(--electric-cyan);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 32px 24px;
+      text-align: center;
+      border-top: 1px solid var(--elevated);
+      width: 100%;
+      max-width: 640px;
+    }
+
+    footer a {
+      color: var(--synth-purple);
+      text-decoration: none;
+      margin: 0 16px;
+      font-size: 0.9rem;
+    }
+
+    footer a:hover {
+      color: var(--electric-cyan);
+    }
+
+    .copyright {
+      margin-top: 16px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 48px 16px 32px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Konto löschen</h1>
+    <p class="subtitle">Nerd Arena – Kontolöschung anfordern</p>
+
+    <p>Du kannst jederzeit die Löschung deines Nerd Arena-Kontos und aller damit verbundenen Daten anfordern.</p>
+
+    <h2>So funktioniert's</h2>
+    <p>Sende eine E-Mail mit dem Betreff <strong>„Konto löschen"</strong> an:</p>
+
+    <div class="email-box">
+      <a href="mailto:nerdarena.app@gmail.com?subject=Konto%20l%C3%B6schen">nerdarena.app@gmail.com</a>
+    </div>
+
+    <p>Bitte gib in der E-Mail folgende Informationen an, damit wir dein Konto eindeutig zuordnen können:</p>
+    <ul>
+      <li>Dein Nutzername in der App</li>
+      <li>Die E-Mail-Adresse, mit der du dich angemeldet hast (falls Google-Anmeldung verwendet)</li>
+    </ul>
+
+    <h2>Was wird gelöscht?</h2>
+    <p>Bei einer Kontolöschung werden folgende Daten unwiderruflich entfernt:</p>
+    <ul>
+      <li>Dein Nutzerprofil und Nutzername</li>
+      <li>Deine Spielstände und Statistiken</li>
+      <li>Deine Leaderboard-Einträge</li>
+      <li>Alle mit deinem Konto verknüpften Daten</li>
+    </ul>
+
+    <div class="info-box">
+      <p><strong>Bearbeitungszeit:</strong> Deine Anfrage wird innerhalb von 7 Werktagen bearbeitet. Du erhältst eine Bestätigung per E-Mail, sobald die Löschung abgeschlossen ist.</p>
+    </div>
+
+    <h2>Hinweis</h2>
+    <p>Die Kontolöschung ist endgültig und kann nicht rückgängig gemacht werden. Alle deine Daten, einschließlich Spielfortschritt und Erfolge, gehen dabei verloren.</p>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Nerd Arena</p>
+  </footer>
+</body>
+</html>
