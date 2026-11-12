@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerd Arena – Das Quiz für echte Nerds</title>
+  <meta name="description" content="Nerd Arena ist eine Multiplayer-Quiz-App für echte Nerds. Teste dein Wissen in Gaming, Anime, Filme, Technik und mehr!">
+  <style>
+    :root {
+      --bg: #0D0221;
+      --surface: #150535;
+      --elevated: #2A1060;
+      --neon-pink: #FF2D95;
+      --electric-cyan: #00F0FF;
+      --synth-purple: #7B61FF;
+      --text-primary: #E0D0FF;
+      --text-secondary: #8B6FCF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 24px 48px;
+      max-width: 640px;
+    }
+
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--neon-pink), var(--synth-purple), var(--electric-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-primary);
+      margin-bottom: 48px;
+      text-align: left;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+      width: 100%;
+    }
+
+    .feature {
+      background: var(--surface);
+      border: 1px solid var(--elevated);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .feature-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--electric-cyan);
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .cat-tag {
+      background: var(--elevated);
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 48px;
+      background: var(--surface);
+      border: 1px solid var(--elevated);
+      border-radius: 12px;
+      padding: 16px 32px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .badge strong {
+      color: var(--neon-pink);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 32px 24px;
+      text-align: center;
+      border-top: 1px solid var(--elevated);
+      width: 100%;
+      max-width: 640px;
+    }
+
+    footer a {
+      color: var(--synth-purple);
+      text-decoration: none;
+      margin: 0 16px;
+      font-size: 0.9rem;
+    }
+
+    footer a:hover {
+      color: var(--electric-cyan);
+    }
+
+    .copyright {
+      margin-top: 16px;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 48px 16px 32px; }
+      .logo { font-size: 2.5rem; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <h1 class="logo">Nerd Arena</h1>
+    <p class="tagline">Das Quiz für echte Nerds 🤓</p>
+
+    <div class="description">
+      <p>Nerd Arena ist eine Quiz-App, in der du dein Wissen in über 100 Kategorien unter Beweis stellst. Spiele Solo-Minigames, fordere deine Freunde heraus und sammle Brillen auf dem Weg zur Nerd-Legende.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🎮</div>
+        <div class="feature-title">Solo-Minigames</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">👥</div>
+        <div class="feature-title">Multiplayer</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <div class="feature-title">Leaderboard</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-title">2000+ Fragen</div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <span class="cat-tag">🎮 Gaming</span>
+      <span class="cat-tag">🎬 Filme & Serien</span>
+      <span class="cat-tag">⚔️ Fantasy & Sci-Fi</span>
+      <span class="cat-tag">🎌 Anime & Manga</span>
+      <span class="cat-tag">💻 Technik</span>
+      <span class="cat-tag">🌐 Internet</span>
+      <span class="cat-tag">🎲 Brettspiele</span>
+      <span class="cat-tag">🎵 Musik & Popkultur</span>
+      <span class="cat-tag">🔬 Wissenschaft</span>
+      <span class="cat-tag">🤓 Geek-Wissen</span>
+    </div>
+
+    <div class="badge">
+      Bald verfügbar im <strong>Google Play Store</strong>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Nerd Arena</p>
+  </footer>
+</body>
+</html>
